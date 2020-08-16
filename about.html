@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>エイム電機</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.ico">
+	<script src="js/openclose.js"></script>
+	<script src="js/fixmenu_pagetop.js"></script>
+	<script src="js/ddmenu_min.js"></script>
+</head>
+
+<body>
+
+	<div >
+
+		<header>
+			<h1 id="logo"><a href="index.html"><img src="images/ロゴ.png" alt="SAMPLE COMPANY"></a></h1>
+			<!--PC用（901px以上端末）メニュー-->
+			<nav id="menubar">
+				<ul>
+					<li class="ddmenu-title">企業情報
+						<ul class="ddmenu">
+							<li><a href="index.html">企業情報トップ</a></li>
+							<li><a href="greeting.html">経営理念</a></li>
+							<li><a href="about.html">会社概要</a></li>
+						</ul>
+					</li>
+					<li><a href="product.html">取扱商品</a></li>
+					<li><a href="contact.html">お問い合わせ</a></li>
+				</ul>
+			</nav>
+			<!--小さい端末用（900px以下端末）メニュー-->
+			<nav id="menubar-s">
+				<ul>
+					<li id="menubar_hdr2" class="close">企業情報
+						<ul id="menubar-s2">
+							<li><a href="service.html">企業情報トップ</a></li>
+							<li><a href="service.html">経営理念</a></li>
+							<li><a href="service.html">会社概要</a></li>
+						</ul>
+					</li>
+					<li><a href="product.html">取扱商品</a></li>
+					<li><a href="contact.html">お問い合わせ</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="contents">
+
+			<section id="about">
+
+				<h2 style="background: none;border-left: none;">会社概要</h2>
+
+				<div class="corporate">
+					<table>
+						<tbody>
+							<tr>
+								<th>社名</th>
+								<td>株式会社エイム電機</td>
+							</tr>
+							<tr>
+								<th>社長</th>
+								<td>代表取締役　山田 太郎</td>
+							</tr>
+							<tr>
+								<th>本社所在地</th>
+								<td>東京都中央区日本橋茅場町1-6-17</td>
+							</tr>
+							<tr>
+								<th>設立</th>
+								<td>1992年1月19日</td>
+							</tr>
+							<tr>
+								<th>資本金</th>
+								<td>5000万円</td>
+							</tr>
+							<tr>
+								<th>決算</th>
+								<td>年1回 3月末日</td>
+							</tr>
+							<tr>
+								<th>業種</th>
+								<td>家電製品、家庭用品の企画・製造・卸売り</td>
+							</tr>
+							<tr>
+								<th>社員数</th>
+								<td>200名（2020年3月末現在）</td>
+							</tr>
+							<tr>
+								<th>関係会社</th>
+								<td>
+									<ul>
+										<li><a href="https://www.aim.ac/" target="_blank">株式会社エイム</a></li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+			</section>
+
+		</div>
+		
+		<div id="menubar_hdr" class="close"></div>
+
+		
+		<script>
+			if (OCwindowWidth() <= 900) {
+				open_close("menubar_hdr", "menubar-s");
+			}
+		</script>
+
+		
+		<script>
+			if (OCwindowWidth() <= 900) {
+				open_close("menubar_hdr2", "menubar-s2");
+			}
+		</script>
+
+</body>
+
+</html>
