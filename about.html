@@ -15,37 +15,43 @@
 
 <body>
 
-	<div >
+	<div>
 
 		<header>
 			<h1 id="logo"><a href="index.html"><img src="images/ロゴ.png" alt="SAMPLE COMPANY"></a></h1>
 			<!--PC用（901px以上端末）メニュー-->
 			<nav id="menubar">
-				<ul>
-					<li class="ddmenu-title">企業情報
-						<ul class="ddmenu">
-							<li><a href="index.html">企業情報トップ</a></li>
-							<li><a href="greeting.html">経営理念</a></li>
-							<li><a href="about.html">会社概要</a></li>
-						</ul>
-					</li>
-					<li><a href="product.html">取扱商品</a></li>
-					<li><a href="contact.html">お問い合わせ</a></li>
-				</ul>
+				<div>
+					<ul>
+						<li class="ddmenu-title">企業情報
+							<ul class="ddmenu">
+								<li><a href="index.html">企業情報トップ</a></li>
+								<li><a href="greeting.html">経営理念</a></li>
+								<li><a href="about.html">会社概要</a></li>
+							</ul>
+						</li>
+						<li><a href="product.html">取扱商品</a></li>
+						<li><a href="contact.html">お問い合わせ</a></li>
+					</ul>
+				</div>
+				<div class="web-store"><img class="img-cart" src="images/cart.png">Webストアへ</div>
 			</nav>
 			<!--小さい端末用（900px以下端末）メニュー-->
 			<nav id="menubar-s">
-				<ul>
-					<li id="menubar_hdr2" class="close">企業情報
-						<ul id="menubar-s2">
-							<li><a href="service.html">企業情報トップ</a></li>
-							<li><a href="service.html">経営理念</a></li>
-							<li><a href="service.html">会社概要</a></li>
-						</ul>
-					</li>
-					<li><a href="product.html">取扱商品</a></li>
-					<li><a href="contact.html">お問い合わせ</a></li>
-				</ul>
+				<div>
+					<ul>
+						<li id="menubar_hdr2" class="close">企業情報
+							<ul id="menubar-s2">
+								<li><a href="service.html">企業情報トップ</a></li>
+								<li><a href="service.html">経営理念</a></li>
+								<li><a href="service.html">会社概要</a></li>
+							</ul>
+						</li>
+						<li><a href="product.html">取扱商品</a></li>
+						<li><a href="contact.html">お問い合わせ</a></li>
+					</ul>
+				</div>
+				<div class="web-store"><img class="img-cart" src="images/cart.png">Webストアへ</div>
 			</nav>
 		</header>
 
@@ -106,17 +112,17 @@
 			</section>
 
 		</div>
-		
+
 		<div id="menubar_hdr" class="close"></div>
 
-		
+
 		<script>
 			if (OCwindowWidth() <= 900) {
 				open_close("menubar_hdr", "menubar-s");
 			}
 		</script>
 
-		
+
 		<script>
 			if (OCwindowWidth() <= 900) {
 				open_close("menubar_hdr2", "menubar-s2");

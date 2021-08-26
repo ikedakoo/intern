@@ -1350,3 +1350,21 @@ body .text-sentence {
 body .text-indented {
   text-indent: 1em;
 }
+
+
+#menubar{
+  width: calc(100% - 180px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.web-store{
+  cursor: pointer;
+  color: white;
+}
+
+.img-cart{
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
