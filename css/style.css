@@ -1368,3 +1368,11 @@ body .text-indented {
   height: 24px;
   margin-right: 5px;
 }
+
+a {
+  text-decoration: none; /* 下線を削除 */
+}
+
+a:hover {
+  text-decoration: none; /* ホバー時の下線も削除 */
+}
